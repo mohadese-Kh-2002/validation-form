@@ -1,0 +1,11 @@
+@media (max-width:576px) {
+    .timer {
+        width: 100%
+    }
+}
+@media (max-width:400px) {
+    .timer__info{
+        flex-direction: column;
+        margin: 5rem 0;
+    }
+}

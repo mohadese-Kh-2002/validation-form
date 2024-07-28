@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+</head>
+
+<body>
+    <section class="register">
+        <h1 class="register__title">Register</h1>
+        <form class="form">
+            <div class="wrapper__inputs">
+                <div class="wrapper__input">
+                    <label for="username" class="input__name"><i class="fas fa-user icon"></i>Username:</label>
+                    <input type="text" id="username" class="form__input">
+                    <p class="show-problem username-problem"></p>
+                </div>
+                <div class="wrapper__input">
+                    <label for="email" class="input__name"><i class="fa fa-envelope icon"></i>Email:</label>
+                    <input type="email" id="email" class="form__input">
+                    <p class="show-problem email-problem"></p>
+                </div>
+                <div class="wrapper__input" >
+                    <label for="password" class="input__name"><i class="fas fa-lock icon"></i>Password:</label>
+                    <input type="password" id="password" class="form__input">
+                    <span class="eye eye-password">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                    <p class="show-problem password-problem"></p>
+                </div>
+                <div class="wrapper__input" >
+                    <label for="repassword" class="input__name"><i class="fas fa-lock icon"></i>Repassword:</label>
+                    <input type="password" id="repassword" class="form__input">
+                    <span class="eye eye-repassword">
+                        <i class="fas fa-eye "></i>
+                    </span>
+                    <p class="show-problem repassword-problem"></p>
+                </div>
+            </div>
+            <p class="problemLogin show-problem"></p>
+            <button type="submit" class="form__submit">Register <i class="fas fa-sign-in icon-regester"></i></button>
+        </form>
+    </section>
+
+    <script src="./scripts/plugins/fontawesome.min.js"></script>
+    <script type="module" src="./scripts/app.js"></script>
+</body>
+
+</html>
